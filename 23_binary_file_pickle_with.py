@@ -7,7 +7,7 @@ import pickle
 # profile = { '이름': 'John', '나이': 30, '취미': ['축구', '골프', '코딩']}
 # print(profile)
 
-# pickle.dump(profile, profile_file) # profile 정보를 binary 데이터로 profile_file에 쓰기         
+# pickle.dump(profile, profile_file) # profile 정보를 binary 데이터로 profile_file에 쓰기
 # profile_file.close()
 
 print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
@@ -27,7 +27,8 @@ profile_file.close()
 print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>')
 
 
-# with : close() 필요없음, 블록내의 명령 실행이 완료되면 파일이 자동으로 닫힘 
+# with : close() 필요없음, 블록내의 명령 실행이 완료되면 파일이 자동으로 닫힘
+# Context Manager 
 
 with open('profile.pickle', 'rb') as profile_file:
 	profile = pickle.load(profile_file)
